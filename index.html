@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .dropdown-item{
+        color: white;
+        margin: 10px;
+        border-radius: 5px;
+        transition: .4s;
+      }
+      .dropdown-item:hover{
+        background: gray;
+        color: white;
+        transform: scale(1.1);
+      }
+      .nav-link{
+        color: white;
+        margin: 10px;
+        border-radius: 5px;
+        transition: .4s;
+      }
+      .nav-link:hover{
+        background: gray;
+        color: white;
+        transform: scale(1.1);
+      }
+      .navbar{
+        background: rgb(20, 105, 105);
+      }
+      .dropdown-menu{
+        background: paleturquoise;
+      }
+      ul li{
+        padding-right: 8px;
+      }
+      .navbar a{
+        font-size: 1.5rem;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      header{
+        background: url(pic.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .banner-container{
+        height: 100vh;
+      }
+      #features{
+        padding: 5% 10%;
+        background: #6F9A8D;
+      }
+      .features-col{
+        border: 3px solid black;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px 0;
+        transition: .4s;
+      }
+      .features-col:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 3px white,
+        -2px -2px 3px white;
+      }
+      .log{
+        border: 8px dotted black;
+        border-bottom: none;
+        width: 10%;
+      }
+      #about-me{
+        background: #A7D0CD;
+      }
+      .star i{
+        width: 30px;
+        color: white;
+      }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-white p-0">
+            <div class="container-fluid">
+              <a class="navbar-brand font-weight-bold" href="#">FouaD</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i style="font-size: 2rem;" class="fa fa-bars" aria-hidden="true"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active  text-center text-md-left" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-center text-md-left" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-center text-md-left" href="#">Find</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle  text-center text-md-left" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                     Items
+                    </a>
+                    <ul style="background: paleturquoise;" class="dropdown-menu  border-0 ml-auto" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item  text-center text-md-left" href="#">CSS</a></li>
+                      <li><a class="dropdown-item  text-center text-md-left" href="#">Java</a></li>
+                      <li><a class="dropdown-item  text-center text-md-left" href="#">Python</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <section id="banner">
+            <div class="banner-container text-center text-white d-flex justify-content-center align-items-center">
+              <div class="banner-contents">
+                <h1 style="font-size: 4rem; font-family: cursive;" class="font-weight-bolder p-5">Learn something new !!</h1>
+                <button class="btn btn-primary btn-lg mr-4"><i style="color: white;" class="fa fa-play"></i> Tutorials</button>
+                <button class="btn btn-primary btn-lg"><i style="color: white;" class="fa fa-youtube-play"></i> Subscribe</button>
+              </div>
+            </div>
+          </section>
+    </header>
+    <main>
+      <section id="features" class="text-center">
+        <div class="row">
+          <div class="col-lg-4 d-block d-md-flex">
+            <div class="features-col">
+              <i style="color: lightskyblue;" class="fa fa-handshake-o fa-4x icon-style rounded-circle" ></i>
+              <h5 class="font-weight-bold">Free to use</h5>
+              <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias, aperiam animi cupiditate iure quod.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-block d-md-flex">
+            <div class="features-col">
+              <i style="color: lightskyblue;" class="fa fa-handshake-o fa-4x icon-style rounded-circle" ></i>
+              <h5 class="font-weight-bold">Free to use</h5>
+              <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias, aperiam animi cupiditate iure quod.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-block d-md-flex">
+            <div class="features-col">
+              <i style="color: lightskyblue;" class="fa fa-handshake-o fa-4x icon-style rounded-circle" ></i>
+              <h5 class="font-weight-bold">Free to use</h5>
+              <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestias, aperiam animi cupiditate iure quod.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-me" class="">
+        <div class="section-title text-center">
+          <h3 class="font-weight-bolder">About me</h3>
+          <hr class="log">
+        </div>
+        <div class="row">
+          <div class="col-5 ml-auto">
+            <div class="basic-desc">
+              <i style="background: rgb(112, 167, 204); color: rgb(165, 59, 108);" class="fa fa-user-circle-o rounded-circle fa-4x" aria-hidden="true"></i>
+              <h5>Personal Info</h5>
+              <h5>Fouad Azmol Haque</h5>
+              <h5>Web Designer</h5>
+              <p class="small">Lorem ipsum dolor sit, amet consectetur <br> adipisicing elit. Voluptate, labore nesciunt. <br> Nisi quae minima reiciendis velit ducimus ipsa! Dolor,<br> sit!</p>
+              <button class="btn btn-outline-primary">Download CV</button>
+            </div>
+          </div>
+          <div class="col-7"></div>
+          <div class="col-7"></div>
+          <div class="col-5">
+            <i style="background: black; color: rgb(95, 202, 179);" class="fa fa-graduation-cap fa-5x rounded-circle" aria-hidden="true"></i>
+            <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque sint a aperiam minus numquam, dolores expedita tempore eos officia quam.</p>
+            <div>
+              <a href="#lol" data-toggle="collapse" >Learn more... </a>
+              <div class="collapse" id="lol">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum illo quia non odio! Dolores qui quas voluptatem omnis fugit sapiente quis cumque ratione harum eum, enim mollitia vitae suscipit, placeat atque impedit voluptate, voluptates blanditiis quae quod voluptatum nam neque tempore. Magni deleniti sunt temporibus quam corrupti doloremque quas veritatis quo, aspernatur debitis sapiente ad error odio cum laborum maxime?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-8 m-5">
+            <i style="color: rgb(185, 20, 89);" class="fa fa-briefcase fa-5x rounded-circle" aria-hidden="true"></i>
+            <h3 class="font-weight-bolder">Skills</h3>
+            <table class="">
+              <tr>
+                <td>HTML</td>
+                <td>
+                  <span class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>
+                  <span class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>BootStrap</td>
+                <td>
+                  <span class="star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+<!-- bootsrap js cdn  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
